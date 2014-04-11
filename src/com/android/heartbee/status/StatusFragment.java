@@ -25,9 +25,9 @@ public final class StatusFragment extends Fragment {
 		
 //		Bundle args = getArguments();
 //		((TextView)rootView.findViewById(android.R.id.text1)).setText(Integer.toString(args.getInt(ARG_OBJECT)));
-		
-		return null;
-	}
+//		
+//		return null;
+//	}
 	
 //	public View onCreateView(LayoutInflater inflater, ViewGroup container)
 //	{
