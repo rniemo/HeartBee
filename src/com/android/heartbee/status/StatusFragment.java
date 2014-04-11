@@ -17,14 +17,14 @@ public final class StatusFragment extends Fragment {
 			Bundle savedInstanceState
 	)
 	{
-		View rootView = inflater.inflate(
-				layout.fragment_collection_object,
-				container,
-				false
-		);
+//		View rootView = inflater.inflate(
+//				layout.fragment_collection_object,
+//				container,
+//				false
+//		);
 		
-		Bundle args = getArguments();
-		((TextView)rootView.findViewById(android.R.id.text1)).setText(Integer.toString(args.getInt(ARG_OBJECT)));
+//		Bundle args = getArguments();
+//		((TextView)rootView.findViewById(android.R.id.text1)).setText(Integer.toString(args.getInt(ARG_OBJECT)));
 		
 		return null;
 	}
