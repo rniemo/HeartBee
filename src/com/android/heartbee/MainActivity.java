@@ -40,7 +40,7 @@ public class MainActivity extends FragmentActivity {
 	    			tabAdapter.addFragment(new TestFragment(), i);	// CHANGE TO MainFragment
 	    			break;
 	    		case 1:
-	    			tabAdapter.addFragment(new TestFragment(), i);	// CHANGE TO StatusFragment
+	    			tabAdapter.addFragment(new StatusFragment(), i);	// CHANGE TO StatusFragment
 	    			break;
 	    		case 2:
 	    			tabAdapter.addFragment(new TestFragment(), i);	// CHANGE TO CalendarFragment
