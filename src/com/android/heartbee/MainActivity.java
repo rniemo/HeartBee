@@ -26,11 +26,7 @@ public class MainActivity extends FragmentActivity {
 	        public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
 	            tab.select();
 	        }
-
-	        public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
-	        	
-	            
-	        }
+	        public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {}
 	        public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft){}
 	    };
 
@@ -39,7 +35,20 @@ public class MainActivity extends FragmentActivity {
 	    	Tab t = actionBar.newTab()
                     .setText(TabPagerAdapter.TAB_NAMES[i])
                     .setTabListener(tabListener);
-	    	tabAdapter.addFragment(new TestFragment(), i);
+	    	switch(i){
+	    		case 0:
+	    			tabAdapter.addFragment(new TestFragment(), i);	// CHANGE TO MainFragment
+	    			break;
+	    		case 1:
+	    			tabAdapter.addFragment(new TestFragment(), i);	// CHANGE TO StatusFragment
+	    			break;
+	    		case 2:
+	    			tabAdapter.addFragment(new TestFragment(), i);	// CHANGE TO CalendarFragment
+	    			break;
+	    		case 3:
+	    			tabAdapter.addFragment(new FeedFragment(), i);	// Already FeedFragment :)
+	    			break;
+	    	}
 	        actionBar.addTab(t);
 	    }
 	}
